@@ -503,7 +503,7 @@ function draw() {
      else {
          background(50);
          document.getElementById('counter').innerText =  (nextTick-Date.now())/1000;
-         document.write("hie ");
+         document.write("<button>hie<\button> ");
          if(Date.now() >= nextTick){ 
             noLoop();
            window.location.reload();
