@@ -511,7 +511,7 @@ function draw() {
          background(50);
          document.getElementById('counter').innerText =  (nextTick-Date.now())/1000;
                
-        document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();'  ");
+        document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();' / ");
 
                   
          if(Date.now() >= nextTick){ 
