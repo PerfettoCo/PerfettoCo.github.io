@@ -273,12 +273,12 @@ function resetgame() {
        noLoop();
        window.location.reload();
 }
-//function GameOver() {
-//    document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();' ");
-//    document.write("<\hr>");
-//    gameover=true;
-//    nextTick = Date.now() + 5000;
-//}
+function GameOver() {
+    document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();' ");
+    document.write("<\hr>");
+    gameover=true;
+    nextTick = Date.now() + 5000;
+}
 function keyPressed() {
       if (keyIsDown(UP_ARROW)) {
        // bird.y -= 80;
@@ -510,10 +510,10 @@ function draw() {
      else {
          background(50);
          document.getElementById('counter').innerText =  (nextTick-Date.now())/1000;
-                   for (var j = 0; j < 10; j++) {
-                     document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();'  ");
+               
+        document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();'  ");
 
-                   }
+                  
          if(Date.now() >= nextTick){ 
             noLoop();
            window.location.reload();
