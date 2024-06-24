@@ -272,7 +272,7 @@ function resetgame() {
       nextTick=0;
 }
 function GameOver() {
-    document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();' /");
+    document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();' ");
     document.write("<\hr>")
     gameover=true;
     nextTick = Date.now() + 5000;
