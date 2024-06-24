@@ -507,7 +507,7 @@ function draw() {
      else {
          background(50);
          document.getElementById('counter').innerText =  (nextTick-Date.now())/1000;
-         document.write("<button name="crap" onClick="resetgame">hie i like cheese");
+         document.write("<button onclick="resetgame()">hie i like cheese");
          if(Date.now() >= nextTick){ 
             noLoop();
            window.location.reload();
