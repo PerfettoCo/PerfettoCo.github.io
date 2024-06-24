@@ -81,6 +81,9 @@ class Obstacle {
         return false;
     }
 
+
+
+      
     draw() {
         //if( typeof( bStamp.crap) == "undefined" ) {bStamp.crap = Date.now();}
 
@@ -264,8 +267,12 @@ function setup() {
 //        redraw();
 //    }
 //}
+function resetgame() {
+      gameover=false;
+      nextTick=0;
+}
 function GameOver() {
-    document.write("Game restarting in: <label id='counter'>10</label> Seconds.");
+    document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();' /");
     document.write("<\hr>")
     gameover=true;
     nextTick = Date.now() + 5000;
