@@ -511,8 +511,8 @@ function draw() {
          background(50);
          document.getElementById('counter').innerText =  (nextTick-Date.now())/1000;
                    for (var j = 0; j < 10; j++) {
-         document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();'  ");
-         document.write("<input name='secondbutt' type='button' value='reset game becaz you failed' onClick='resetgame();'  ");
+                     document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();'  ");
+
                    }
          if(Date.now() >= nextTick){ 
             noLoop();
