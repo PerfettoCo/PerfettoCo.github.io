@@ -31,7 +31,11 @@ var riseTick=0;
 var bg;
 var bird = {x: 400, y: 250, rad: 15, speed: 0, momentumx: 0, momentumy: 0, health: 100, offx: 0, injured: 0, dir: 0};
 
+function resetgame() {
 
+  nextTick = 0;
+
+}
 
 function preload() {
       skysky = loadImage('skybackground.bmp');
