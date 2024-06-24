@@ -270,6 +270,8 @@ function setup() {
 function resetgame() {
       gameover=false;
       nextTick=0;
+       noLoop();
+       window.location.reload();
 }
 function GameOver() {
     document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();' ");
