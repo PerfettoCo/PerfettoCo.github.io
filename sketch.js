@@ -273,12 +273,12 @@ function resetgame() {
        noLoop();
        window.location.reload();
 }
-function GameOver() {
-    document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();' ");
-    document.write("<\hr>");
-    gameover=true;
-    nextTick = Date.now() + 5000;
-}
+//function GameOver() {
+//    document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();' ");
+//    document.write("<\hr>");
+//    gameover=true;
+//    nextTick = Date.now() + 5000;
+//}
 function keyPressed() {
       if (keyIsDown(UP_ARROW)) {
        // bird.y -= 80;
