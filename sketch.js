@@ -508,7 +508,7 @@ function draw() {
      else {
          background(50);
          document.getElementById('counter').innerText =  (nextTick-Date.now())/1000;
-         document.write("restarting in a min");
+         document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();' ");
          if(Date.now() >= nextTick){ 
             noLoop();
            window.location.reload();
