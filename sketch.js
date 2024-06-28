@@ -14,6 +14,7 @@ let planeupasset;
 let planedownasset;
 let planeleftasset;
 let planerightasset;
+let gameoverscreen;
 let xDown=null;
 let yDown=null;
 let SwypeTick=0;
@@ -42,6 +43,7 @@ function preload() {
       planerightasset = loadimage('planeright.bmp');
       planeupasset = loadimage('planeup.bmp');
       planedownasset = loadimage('planedown.bmp');
+      gameoverscreen = loadimage('GameOverScreen.png');
       //birdasset.mask(birdmask);
       //image(birdasset,0,0);
 
@@ -510,8 +512,8 @@ function draw() {
      else {
          background(50);
          document.getElementById('counter').innerText =  (nextTick-Date.now())/1000;
-               
-        document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();' / ");
+         image(gameoverscreen, 0, 0, canvasWidth, canvasHeight);     
+        //document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();' / ");
 
                   
          if(Date.now() >= nextTick){ 
