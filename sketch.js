@@ -512,7 +512,7 @@ function draw() {
      else {
          background(50);
          document.getElementById('counter').innerText =  (nextTick-Date.now())/1000;
-         image(gameoverscreen, 0, 0, canvasWidth, canvasHeight);     
+         image(gameoverscreen, 0, 0, canvasWidth, 350);     
         //document.write("<input type='button' value='reset game becaz you failed' onClick='resetgame();' / ");
 
                   
